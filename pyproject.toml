@@ -1,0 +1,26 @@
+[project]
+name = "tp-pytorch"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Hajar El Alaoui", email = "elalaouihajar60@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "ipykernel>=7.4.0",
+    "matplotlib>=3.11.2",
+    "scikit-learn>=1.9.1",
+    "torch>=2.14.1",
+    "torcheval>=0.0.7",
+    "torchmetrics>=1.9.0",
+    "torchvision>=0.29.2",
+    "torchviz>=0.0.3",
+]
+
+[project.scripts]
+tp-pytorch = "tp_pytorch:main"
+
+[build-system]
+requires = ["uv_build>=0.13.9,<0.14.0"]
+build-backend = "uv_build"
